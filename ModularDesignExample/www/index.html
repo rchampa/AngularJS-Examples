@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <!-- CSS (load bootstrap) -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style>
+      .navbar { border-radius:0; }
+    </style>
+
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="modules/guides/js/guides.js"></script>
+    <script src="modules/guides/js/controllers.js"></script>
+    <script src="modules/projects/projects.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <!-- apply our angular app to our site -->
+  <body ng-app="main">
+  <h1>Hello Plunker!</h1>
+  <ul>
+    <li><a ui-sref="main">main</a></li>
+    <li><a ui-sref="login">login</a></li>
+    <li><a ui-sref="guides">guides</a></li>
+    <li><a ui-sref="guides.login">guides.login</a></li>
+    <li><a ui-sref="guides.menu">guides.menu</a></li>
+    <li><a ui-sref="guides.web">guides.web</a></li>
+    <li><a ui-sref="guides.mobile">guides.mobile</a></li>
+
+    <li><a ui-sref="projects">projects</a></li>
+    <li><a ui-sref="projects.login">projects.login</a></li>
+    <li><a ui-sref="projects.business">projects.business</a></li>
+    <li><a ui-sref="projects.community">projects.community</a></li>
+    <li><a ui-sref="projects.menu">projects.menu</a></li>
+
+  </ul>
+  <div ui-view></div>
+  </body>
+</html>
